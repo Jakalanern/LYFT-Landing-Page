@@ -1,0 +1,264 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url(https://images.unsplash.com/photo-1522992981590-f4274364e109?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+nav h1 {
+    color: white;
+    margin-right: auto;
+    margin-left: 1em;
+    font-size: 2.5rem;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+nav li {
+    font-size: 1.2em;
+    color: white;
+    margin: 0 1em;
+}
+
+nav li:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.header {
+    font-size: 2rem;
+    margin: 0 auto;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.form-card {
+    overflow: hidden;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 4rem;
+    width: clamp(300px, 25%, 600px);
+}
+
+form {
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1em 1.5em;
+}
+
+form h1 {
+    margin: 0;
+}
+
+form p,
+.check-status {
+    font-weight: 300;
+}
+
+form p {
+    color: rgba(0, 0, 0, 0.582);
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.397);
+}
+
+form a {
+    color: rgb(228, 0, 133);
+}
+
+form a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input[type='checkbox'] {
+    margin: 0;
+    margin-right: .25rem;
+    vertical-align: middle;
+}
+
+form input {
+    margin: .5em 0;
+    padding: 1em .5em;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: .25em;
+}
+
+form input[type='promo'] {
+    margin-bottom: 1em;
+    ;
+}
+
+form .agree-box {
+    margin-bottom: 1rem;
+    font-size: .9em;
+}
+
+form .check-status {
+    padding-top: .5rem;
+    font-size: .85em;
+}
+
+form button {
+    padding: .8em 1em;
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(228, 0, 133);
+    color: white;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: .25em;
+    border-bottom: 3px solid rgba(128, 0, 60, 0.774);
+}
+
+.form-card>* {
+    flex-basis: 10%;
+}
+
+footer {
+    background-color: rgb(240, 240, 240);
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-form {
+    padding: 2rem;
+}
+
+.footer-form p {
+    color: rgba(0, 0, 0, 0.582);
+    font-weight: 500;
+}
+
+.footer-form h1 {
+    margin: 0;
+}
+
+.footer-form input {
+    padding: .6em .75em;
+    border: none;
+    border-radius: .15em;
+}
+
+.footer-form button {
+    padding: .5em .75em;
+    background: rgb(228, 0, 133);
+    border: none;
+    color: white;
+    font-weight: 900;
+    font-size: .8rem;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+    border-radius: .15em;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(209, 0, 122);
+}
+
+
+@media (max-width: 975px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    .header {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .form-card {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav h1 {
+        margin: 0 auto;
+        padding: .25rem 0 0 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    nav li {
+        margin: .15rem 0;
+    }
+
+    .header {
+        margin: 0rem 2rem;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 4rem;
+    }
+
+    footer input {
+        margin-bottom: 1rem;
+    }
+
+    .footer-form {
+        flex-direction: column;
+    }
+}
