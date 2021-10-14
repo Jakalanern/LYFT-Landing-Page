@@ -9,7 +9,6 @@ body {
 
 body {
     background: url(https://images.unsplash.com/photo-1522992981590-f4274364e109?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80);
-    background-color: rgba(0, 0, 0, 0.89);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,8 +165,7 @@ form button {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.705);
-    color: white;
+    background-color: rgb(238, 238, 238);
     clear: both;
     position: absolute;
     bottom: 0;
@@ -181,7 +179,6 @@ footer {
 
 .footer-form p {
     color: rgba(0, 0, 0, 0.582);
-    color: rgba(255, 255, 255, 0.822);
     font-weight: 500;
 }
 
